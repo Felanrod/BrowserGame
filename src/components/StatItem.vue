@@ -1,15 +1,15 @@
 <script setup lang="ts">
 defineProps<{
-  statname: string
-  stat: number
+  statName: string
+  statNum: number
 }>()
 </script>
 
 <template>
-  <div class="stat">
-    <label :for="statname">{{ statname }}</label>
-    <input type="text" :name="statname" :id="statname" placeholder="0" :value="stat" disabled />
-  </div>
+  <fieldset class="stat">
+    <label>{{ statName }}</label>
+    <input type="text" :name="statName" :id="statName" placeholder="0" :value="statNum" disabled />
+  </fieldset>
 </template>
 
 <style scoped>

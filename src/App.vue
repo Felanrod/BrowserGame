@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BrowserGameHeader from './components/BrowserGameHeader.vue'
-import SomeStats from './components/SomeStats.vue'
+import MainComponent from './components/MainComponent.vue'
+//import SomeStats from './components/SomeStats.vue'
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import SomeStats from './components/SomeStats.vue'
   </header>
   <main>
     <div class="wrapper">
-      <SomeStats />
+      <MainComponent />
     </div>
   </main>
 </template>
