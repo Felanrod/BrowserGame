@@ -31,8 +31,13 @@ function createRandChar(event: Event) {
       v-for="character in characters"
       :key="character.charName"
       :char-name="character.charName"
+      :char-class="character.charClass"
+      :char-level="character.charLevel"
+      :char-exp="character.charExp"
       :char-stats="character.charStats"
       :is-it-true="character.isItTrue"
+      :increase-exp="character.increaseEXP.bind(character)"
+      :the-character="character"
     />
 
     <button v-if="!characters || characters.length < maxNumCharacters" @click="createRandChar">
